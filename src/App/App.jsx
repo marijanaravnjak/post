@@ -16,12 +16,13 @@ function App() {
 
     return (
         <Box sx={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + '/post.png'})`,
-            height: '100vh',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
+        //     backgroundImage: `url(${process.env.PUBLIC_URL + '/post.png'})`,
+        //     height: '100vh',
+        //     backgroundPosition: 'center',
+        //     backgroundRepeat: 'no-repeat',
+        //     backgroundSize: 'cover',
         }}>
+        
             <Router isLoading={loading} />
         </Box >
     )
