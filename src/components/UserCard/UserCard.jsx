@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, CardHeader, CardContent, Typography } from '@mui/material'
 import PropTypes from 'prop-types'
 import { MailTwoTone } from '@mui/icons-material'
+import {Link} from 'react-router-dom'
 
 
 
@@ -14,10 +15,10 @@ export default function UserCard({ user }) {
                 action={
                     <Typography
                         variant='h6'
-                        component='a'
+                        component={Link}
                         color='black'
                         mr={13}
-                        href={`/users/${user.id}`}
+                        to={`/users/${user.id}`}
                     >{user.name}
                     </Typography>
                 }
