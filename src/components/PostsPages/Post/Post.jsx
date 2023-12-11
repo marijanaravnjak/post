@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
-import { useParams } from 'react-router-dom'
+import {Link, useParams } from 'react-router-dom'
 
 const Post = (post) => {
     const { userId } = useParams()
@@ -20,9 +20,9 @@ const Post = (post) => {
             <Typography
                 color='ButtonText'
                 variant='h6'
-                component='a'
+                component={Link}
                 text-decoration='none'
-                href={`/users/${userId}/posts/${postId}`}
+                to={`/users/${userId}/posts/${postId}`}
                 gutterBottom>
                 {postTitle}
             </Typography>

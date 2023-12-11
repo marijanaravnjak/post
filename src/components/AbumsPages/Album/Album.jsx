@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
-import { useParams } from 'react-router-dom'
+import {Link, useParams } from 'react-router-dom'
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks'
 
 const Album = (album) => {
@@ -15,10 +15,10 @@ const Album = (album) => {
                 <LibraryBooksIcon fontSize='small' /> {albumId}* Album Title
             </Typography>
             <Typography
-                component='a'
+                component={Link}
                 color='inherit'
                 textdecorationline='none'
-                href={`/users/${userId}/albums/${albumId}`
+                to={`/users/${userId}/albums/${albumId}`
                 }>
                 <Typography variant='h5'
                     color='text.primary'>
