@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
-import { Link, useParams } from 'react-router-dom'
+import {Link, useParams } from 'react-router-dom'
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks'
 
 const Album = (album) => {
