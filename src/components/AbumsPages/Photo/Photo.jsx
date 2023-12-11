@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { Grid, IconButton, ImageList, ImageListItemBar, ImageListItem } from '@mui/material'
 import InfoIcon from '@mui/icons-material/Info'
 
@@ -23,7 +23,8 @@ const Photo = (photo) => {
                                 <IconButton
                                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                                     aria-label={`info about ${photo.title}`}
-                                    href={`/users/${userId}/albums/${albumId}/photos/${photoId}`}>
+                                    component={Link}
+                                    to={`/users/${userId}/albums/${albumId}/photos/${photoId}`}>
                                     <InfoIcon />
                                 </IconButton>
                             } />
